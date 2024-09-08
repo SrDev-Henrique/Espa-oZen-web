@@ -81,7 +81,7 @@ nav .links a:not(:last-child) {
 }
 
 header{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -235,9 +235,10 @@ font-size: 18px;
 .massagens .msg-lista .lista .bid{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     max-width: 280px;
     height: auto;
+    margin-top: 10px;
 }
 
 .massagens ,msg-lista .lista .bid p{
@@ -470,8 +471,16 @@ footer .right p {
         row-gap: 30px;
     }
 
+    .massagens .categorias{
+        padding: 10px 0 0;
+    }
+
     .massagens .msg-lista .lista {
         width: 48%;
+    }
+
+    .massagens .msg-lista .lista .bid{
+        min-width: 100%;
     }
 
     .massagens .msg-lista .lista img {
@@ -512,6 +521,10 @@ footer .right p {
 
     header .texto {
         width: 100%;
+    }
+
+    .massagens .msg-lista .lista{
+        min-width: 220px;
     }
 
     .contact-box {
@@ -565,6 +578,10 @@ footer .right p {
         font-size: 30px;
     }
 
+    .massagens .msg-lista .lista {
+        min-width: 280px;
+    }
+
     .container {
         width: 100%;
         display: flex;
@@ -597,6 +614,15 @@ footer .right p {
         margin: 10px auto;
     }
 
+    .massagens .msg-lista {
+        padding: 20px;
+    }
+    
+    
+    .massagens .msg-lista .lista {
+        min-width: 500px;
+    }
+
     #topo h3,
     #topo a{
     font-size: 14px;
@@ -610,6 +636,15 @@ footer .right p {
         gap: 18px;
     }
 
+    .massagens .msg-lista{
+        padding: 20px;
+    }
+    
+
+    .massagens .msg-lista .lista {
+        min-width: 500px;
+    }
+
     #topo h3,
     #topo a {
     font-size: 12px;
@@ -618,21 +653,53 @@ footer .right p {
     .contato .container .contact-box h2 {
         font-size: 32px;
     }
+
+    .contact-box {
+        min-width: 400px;
+    }
 }
 
 @media screen and (max-width: 576px) {
 
-    header.texto h1 {
-        font-size: 30px;
+    #topo .span{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #topo .span .left{
+        align-self: flex-start;
+    }
+
+    #topo .span a{
+        align-self: flex-end;
+    }
+
+    header{
+        display: none;
+    }
+
+    .massagens .msg-lista {
+        padding: 20px;
+        align-content: center;
     }
 
     .massagens .msg-lista .lista {
-        width: 47%;
+        min-width: 400px;
     }
 
     .massagens .categoria a {
         font-size: 13px;
     }
+
+    .contact-box {
+        min-width: 400px;
+    }
+
+    header.texto h1 {
+        font-size: 30px;
+    }
+
 }
 
 
