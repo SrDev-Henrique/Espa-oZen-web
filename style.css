@@ -20,6 +20,14 @@ body {
     background-color: #f1f1f1;
 }
 
+#topo{
+    padding: 0;
+}
+
+#topo .span{
+    width: 100%;
+}
+
 nav {
     padding: 0 80px;
     display: flex;
@@ -662,22 +670,16 @@ footer .right p {
 
 @media screen and (max-width: 575px) {
 
-    #topo .span{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    #topo .span .left{
-        align-self: flex-start;
-    }
-
-    #topo .span a{
-        align-self: flex-end;
+    #topo{
+        display: none;
     }
 
     header{
         display: none;
+    }
+
+    nav .links a:not(:last-child){
+        margin-right: 10px;
     }
 
     .massagens .msg-lista {
