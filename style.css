@@ -179,7 +179,7 @@ h2.separator{
 .massagens .msg-lista{
     padding: 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -334,7 +334,7 @@ font-size: 18px;
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #2ecc71;
+    background-color: #A0522D;
 }
 
 .field {
@@ -359,7 +359,7 @@ textarea {
 .btn {
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: #2ecc71;
+    background-color: #A0522D;
     color: #fff;
     font-size: 1.1rem;
     border: none;
@@ -369,7 +369,7 @@ textarea {
 }
 
 .btn:hover {
-    background-color: #27ae60;
+    background-color: #ce6636;
 }
 
 .field:focus {
@@ -609,13 +609,14 @@ footer .right p {
 
 }
 
-@media screen and (max-width: 710px){
+@media screen and (max-width: 711px){
     .massagens .msg-lista .lista .bid a{
         margin: 10px auto;
     }
 
     .massagens .msg-lista {
         padding: 20px;
+        justify-content: center;
     }
     
     
@@ -659,7 +660,7 @@ footer .right p {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
 
     #topo .span{
         display: flex;
@@ -680,8 +681,8 @@ footer .right p {
     }
 
     .massagens .msg-lista {
-        padding: 20px;
-        align-content: center;
+        padding: 20px 0;
+        justify-content: center;
     }
 
     .massagens .msg-lista .lista {
@@ -693,11 +694,44 @@ footer .right p {
     }
 
     .contact-box {
-        min-width: 400px;
+        min-width: 360px;
     }
 
     header.texto h1 {
         font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+
+    .massagens .msg-lista{
+        padding: 20px 0;
+        justify-content: center;
+    }
+
+    .massagens .msg-lista .lista{
+        min-width: 360px;
+    }
+
+    .contact-container{
+        padding: 0;
+    }
+
+    .contact-container .contact-box{
+        min-width: 360px;
+    }
+
+    .contact-container .contact-box .right{
+        min-width: 200px;
+    }
+
+    .contact-container .contact-box .right h2{
+        font-size: 50px;
+    }
+
+    .contact-container .contact-box .right input{
+        font-size: 14px;
     }
 
 }
